@@ -23,7 +23,7 @@ class MyUserManager(BaseUserManager):
         return user
 
 
-class CustomUser(AbstractUser):
+class CustomUser(AbstractBaseUser):
     username = models.CharField(max_length=50, blank=True)
 
     first_name = models.CharField(
